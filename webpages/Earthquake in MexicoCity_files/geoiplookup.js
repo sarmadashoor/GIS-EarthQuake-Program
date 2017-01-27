@@ -1,0 +1,1 @@
+Geo = {"city":"San Diego","country":"US","lat":"32.995399","lon":"-117.075302","IP":"108.83.5.103","netmask":"24"}
