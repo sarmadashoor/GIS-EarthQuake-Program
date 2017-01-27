@@ -1,0 +1,747 @@
+body {
+	margin: 0px; color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 82%;
+}
+:link {
+	color: rgb(0, 0, 204);
+}
+:hover:link {
+	color: rgb(204, 0, 0);
+}
+:hover:visited {
+	color: rgb(204, 0, 0);
+}
+:link:visited {
+	color: rgb(85, 26, 139);
+}
+acronym {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted;
+}
+abbr {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted;
+}
+hr {
+	display: none;
+}
+#content hr {
+	display: block;
+}
+h1 {
+	margin: 1em 0px;
+}
+h2 {
+	margin: 1em 0px;
+}
+h3 {
+	margin: 1em 0px;
+}
+h4 {
+	margin: 1em 0px;
+}
+h5 {
+	margin: 1em 0px;
+}
+h6 {
+	margin: 1em 0px;
+}
+p {
+	margin: 1em 0px;
+}
+ul {
+	margin: 1em 0px;
+}
+ol {
+	margin: 1em 0px;
+}
+blockquote {
+	margin: 1em 0px;
+}
+table {
+	margin: 1em 0px;
+}
+li {
+	margin-left: 2em;
+}
+li.column {
+	list-style: none; margin-left: 0px;
+}
+li.grid {
+	list-style: none; margin-left: 0px;
+}
+li.container {
+	list-style: none; margin-left: 0px;
+}
+h1 {
+	color: rgb(0, 0, 0);
+}
+h2 {
+	color: rgb(0, 0, 0);
+}
+h3 {
+	color: rgb(0, 0, 0);
+}
+h4 {
+	color: rgb(0, 0, 0);
+}
+h5 {
+	color: rgb(0, 0, 0);
+}
+h6 {
+	color: rgb(0, 0, 0);
+}
+h1 {
+	margin: 0.75em 0px 0.25em; line-height: 1; font-size: 1.85em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1em;
+}
+.invisiblelink {
+	display: none;
+}
+.offsite:hover::after {
+	margin-left: 2px; position: absolute; content: url("/images/small_offsite_arrow.gif");
+}
+a:not([href*='.usgs.gov'])[href^='http']:not([href*='www.doi.gov']):hover::after {
+	margin-left: 2px; position: absolute; content: url("/images/small_offsite_arrow.gif");
+}
+.column {
+	margin: 0px 16px 0px 0px; float: left;
+}
+.grid {
+	margin-right: 0px;
+}
+.container {
+	margin-right: 0px;
+}
+.grid > * {
+	margin-right: 16px;
+}
+.container > * {
+	margin-right: 16px;
+}
+.grid > .grid {
+	margin-right: 0px;
+}
+.container > .container {
+	margin-right: 0px;
+}
+.one {
+	width: 64px;
+}
+.two {
+	width: 144px;
+}
+.three {
+	width: 224px;
+}
+.four {
+	width: 304px;
+}
+.five {
+	width: 384px;
+}
+.six {
+	width: 464px;
+}
+.seven {
+	width: 544px;
+}
+.eight {
+	width: 624px;
+}
+.nine {
+	width: 704px;
+}
+.ten {
+	width: 784px;
+}
+.eleven {
+	width: 864px;
+}
+.twelve {
+	width: 944px;
+}
+.one.grid {
+	width: 80px;
+}
+.one.container {
+	width: 80px;
+}
+.contains-one {
+	width: 80px;
+}
+.two.grid {
+	width: 160px;
+}
+.two.container {
+	width: 160px;
+}
+.contains-two {
+	width: 160px;
+}
+.three.grid {
+	width: 240px;
+}
+.three.container {
+	width: 240px;
+}
+.contains-three {
+	width: 240px;
+}
+.four.grid {
+	width: 320px;
+}
+.four.container {
+	width: 320px;
+}
+.contains-four {
+	width: 320px;
+}
+.five.grid {
+	width: 400px;
+}
+.five.container {
+	width: 400px;
+}
+.contains-five {
+	width: 400px;
+}
+.six.grid {
+	width: 480px;
+}
+.six.container {
+	width: 480px;
+}
+.contains-six {
+	width: 480px;
+}
+.seven.grid {
+	width: 560px;
+}
+.seven.container {
+	width: 560px;
+}
+.contains-seven {
+	width: 560px;
+}
+.eight.grid {
+	width: 640px;
+}
+.eight.container {
+	width: 640px;
+}
+.contains-eight {
+	width: 640px;
+}
+.nine.grid {
+	width: 720px;
+}
+.nine.container {
+	width: 720px;
+}
+.contains-nine {
+	width: 720px;
+}
+.ten.grid {
+	width: 800px;
+}
+.ten.container {
+	width: 800px;
+}
+.contains-ten {
+	width: 800px;
+}
+.eleven.grid {
+	width: 880px;
+}
+.eleven.container {
+	width: 880px;
+}
+.contains-eleven {
+	width: 880px;
+}
+.twelve.grid {
+	width: 960px;
+}
+.twelve.container {
+	width: 960px;
+}
+.contains-twelve {
+	width: 960px;
+}
+.center {
+	display: block;
+}
+.left {
+	display: block;
+}
+.right {
+	display: block;
+}
+.align-center {
+	display: block;
+}
+.align-left {
+	display: block;
+}
+.align-right {
+	display: block;
+}
+.center {
+	margin: 0px auto 1em;
+}
+.align-center {
+	margin: 0px auto 1em;
+}
+.left {
+	float: left;
+}
+.align-left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.align-right {
+	float: right;
+}
+.align-right {
+	margin: 4px 16px 1em;
+}
+img.right {
+	margin: 4px 16px 1em;
+}
+.column .align-right {
+	margin-right: 0px;
+}
+.align-left {
+	margin: 4px 16px 1em 0px;
+}
+img.left {
+	margin: 4px 16px 1em 0px;
+}
+.align-center {
+	margin-top: 0.75em;
+}
+.align-left {
+	margin-top: 0.75em;
+}
+.align-right {
+	margin-top: 0.75em;
+}
+.align-center p {
+	margin-top: 0.4em;
+}
+.align-left p {
+	margin-top: 0.4em;
+}
+.align-right p {
+	margin-top: 0.4em;
+}
+.noprint {
+	display: none !important;
+}
+.noprint * {
+	display: none !important;
+}
+.noscreen {
+	display: none !important;
+}
+.noscreen * {
+	display: none !important;
+}
+#usgsbanner {
+	background: rgb(0, 0, 0);
+}
+#usgsbanner div {
+	background: url("/template/images/header.png") no-repeat 179px 0px rgb(0, 0, 0); margin: 0px auto; width: 960px; height: 72px; padding-left: 16px;
+}
+#usgsbanner img {
+	margin-left: -3px; float: left; display: block;
+}
+#usgsbanner ul {
+	list-style: none; margin: 0px; width: 160px; padding-top: 5px; float: right;
+}
+#usgsbanner ul li {
+	margin: 0px;
+}
+#usgsbanner ul a {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+#usgsbanner ul a:hover {
+	text-decoration: underline;
+}
+#usgstitle {
+	background: url("/template/images/bg_usgstitle.gif") repeat-x 0px 0px rgb(88, 120, 157); color: rgb(255, 255, 255); font-size: 14px; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+#usgstitle div {
+	background: url("/template/images/bg_usgstitle.gif") repeat-x 0px 0px rgb(88, 120, 157); margin: 0px auto; width: 960px; overflow: hidden; padding-left: 16px;
+}
+#usgstitle p {
+	margin: 0px; padding: 5px 0px; line-height: normal; font-size: 1.2em; font-weight: bold; float: left;
+}
+#usgstitle p a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#usgstitle p a:hover {
+	text-decoration: underline;
+}
+#utilities {
+	margin: 0px; padding: 2px 0px; width: auto; color: rgb(255, 255, 255); line-height: 1.5em; font-size: 0.85em; float: right;
+}
+#utilities li {
+	margin: 0px 30px 0px 0px; float: left; list-style-type: none;
+}
+#utilities li a {
+	color: rgb(233, 242, 245); text-decoration: none; margin-top: 5px; display: block;
+}
+#utilities li a:visited {
+	color: rgb(233, 242, 245); text-decoration: none; margin-top: 5px; display: block;
+}
+#utilities li strong a {
+	color: rgb(255, 255, 255);
+}
+#utilities li strong a:visited {
+	color: rgb(255, 255, 255);
+}
+#utilities li a:hover {
+	text-decoration: underline;
+}
+#search {
+	top: 5px; right: -14px; position: relative;
+}
+#search form .search-wrap {
+	background: url("/template/images/sbox_left-trans.gif") no-repeat left top; width: 224px; height: 18px; display: block;
+}
+#search form .search-wrap .search-text {
+	background: url("/template/images/sbox_interior.gif") repeat-x top; margin: 0px; padding: 3px 2px 0px; border: 0px currentColor; left: 22px; top: 0px; width: 150px; height: 18px; line-height: 18px; font-size: 11px; position: absolute; font-size-adjust: none;
+}
+#search form .search-wrap .search-button {
+	left: 176px; position: relative;
+}
+#sitenav {
+	background: url("/template/images/bg-sitenav2.gif") repeat-x left -6px rgb(201, 216, 233); text-transform: uppercase; clear: both; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+#sitenav ul {
+	background: url("/template/images/bg-sitenav2.gif") repeat-x left -6px rgb(201, 216, 233); list-style: none; margin: 0px auto; width: 960px; overflow: hidden; padding-left: 16px;
+}
+#sitenav li {
+	margin: 0px; float: left;
+}
+#sitenav a {
+	padding: 5px 0px 3px; width: 144px; color: rgb(19, 40, 64); font-weight: bold; text-decoration: none; margin-right: 16px; border-bottom-color: rgb(201, 216, 233); border-bottom-width: 3px; border-bottom-style: solid; display: block;
+}
+#sitenav strong a {
+	color: rgb(51, 51, 51); border-bottom-color: rgb(51, 51, 51); border-bottom-width: 3px; border-bottom-style: solid;
+}
+#sitenav a:hover {
+	color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 3px; border-bottom-style: solid;
+}
+#sitenav a.hover {
+	color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 3px; border-bottom-style: solid;
+}
+#sitemap {
+	background: rgb(239, 245, 251); margin: 1.8em 0px 0px; clear: both; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: dotted;
+}
+#sitemap ul {
+	background: rgb(239, 245, 251); margin: 0px auto; padding: 1.5em 0px 1.5em 16px; width: 960px; overflow: hidden;
+}
+#sitemap ul li {
+	list-style: none; margin: 0px 16px 0px 0px; width: 144px; float: left;
+}
+#sitemap ul ul {
+	padding: 0px; width: 144px; margin-top: 1px; float: left;
+}
+#sitemap ul a {
+	color: rgb(42, 75, 113); text-transform: uppercase; line-height: 1.4; padding-bottom: 1px; font-size: 0.9em; font-weight: bold; text-decoration: none; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+#sitemap ul a:hover {
+	color: rgb(0, 0, 0); border-bottom-color: rgb(102, 102, 102);
+}
+#sitemap ul ul a {
+	padding: 3px 0px; color: rgb(42, 75, 113); text-transform: none; font-size: 0.85em; font-weight: normal; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#sitemap ul ul a:hover {
+	background: rgb(228, 237, 248); border-color: rgb(221, 221, 221); color: rgb(0, 0, 0);
+}
+#content {
+	margin: 0.7em auto 1.8em; width: 960px; overflow: visible; padding-left: 16px; clear: both; font-family: Helvetica;
+}
+#content > p {
+	margin-right: 16px;
+}
+#main > p {
+	margin-right: 16px;
+}
+#content > .grid {
+	margin-right: 0px;
+}
+#main > .grid {
+	margin-right: 0px;
+}
+#content > .container {
+	margin-right: 0px;
+}
+#main > .container {
+	margin-right: 0px;
+}
+#main {
+	width: 800px; margin-right: 0px; margin-bottom: 1.8em; float: right;
+}
+#navigation {
+	width: 144px; font-family: Verdana; margin-top: 0em; margin-bottom: 1.8em; float: left;
+}
+#navigation hr {
+	display: none;
+}
+#navigation ul {
+	width: auto;
+}
+#navigation ul li {
+	list-style: none; margin: 0px; width: 144px;
+}
+#navigation ul ul {
+	margin: 0px; overflow: hidden; border-top-color: rgb(153, 153, 153); border-top-width: 1px; border-top-style: solid;
+}
+#navigation ul a {
+	padding: 0.3em 0px 1px; color: rgb(17, 17, 17); line-height: 1.4; font-size: 0.9em; text-decoration: none; border-bottom-color: rgb(234, 234, 234); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+#navigation ul a:hover {
+	background: rgb(233, 241, 231); color: rgb(0, 0, 0);
+}
+#navigation ul strong a.group:hover {
+	background: rgb(233, 241, 231); color: rgb(0, 0, 0);
+}
+#navigation ul ul a {
+	margin: 0px; padding: 3px 0px 3px 4px; color: rgb(85, 85, 85); font-size: 0.82em; border-bottom-color: rgb(239, 239, 239);
+}
+#navigation ul strong a {
+	background: rgb(213, 234, 207); color: rgb(0, 0, 0); font-weight: normal; display: block;
+}
+#navigation ul strong span {
+	background: rgb(213, 234, 207); color: rgb(0, 0, 0); font-weight: normal; display: block;
+}
+#navigation ul strong span {
+	padding: 2px 0px; font-size: 0.9em;
+}
+#navigation ul strong a.childselected.group {
+	
+}
+#navigation ul strong span {
+	
+}
+#content_footer {
+	clear: both;
+}
+#content_footer > * {
+	margin: 0px auto -0.3em; padding: 1.8em 0px 0px 16px; width: 960px; overflow: visible; font-family: Helvetica;
+}
+#share {
+	overflow: hidden;
+}
+#share p {
+	line-height: 1.3em;
+}
+#share a {
+	line-height: 1.3em;
+}
+#share p {
+	margin: 0px 8px 0px 0px; float: left;
+}
+#share ul {
+	list-style: none; margin: 0px; float: left;
+}
+#share li {
+	margin: 0px 16px 0px 0px; float: left;
+}
+#share a {
+	background: url("/template/images/icons-sprite.png") no-repeat; outline: 0px; height: 16px; padding-left: 20px; display: block;
+}
+#share .facebook a {
+	background-position: 0px -32px;
+}
+#share .twitter a {
+	background-position: 0px -80px;
+}
+#share .googlemarks a {
+	background-position: 0px -128px;
+}
+#share .stumbleupon a {
+	background-position: 0px -224px;
+}
+#share .delicious a {
+	background-position: 0px -176px;
+}
+#share .digg a {
+	background-position: 0px -320px;
+}
+#share .email a {
+	background-position: 0px -368px;
+}
+#share .googlereader a {
+	background-position: 0px -656px;
+}
+#share .yahoobuzz a {
+	background-position: 0px -752px;
+}
+#share .messenger a {
+	background-position: 0px -272px;
+}
+#usgsnav {
+	background: rgb(153, 153, 153); clear: both; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+#usgsnav ul {
+	background: rgb(153, 153, 153); list-style: none; margin: 0px auto; width: 960px; padding-left: 16px; position: relative;
+}
+#usgsnav ul::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+#usgsnav li {
+	margin: 0px; float: left;
+}
+#usgsnav li a {
+	padding: 3px 0px; width: 144px; color: rgb(255, 255, 255); text-decoration: none; margin-right: 16px; display: block;
+}
+#usgsnav li a:hover {
+	text-decoration: underline;
+}
+#usgsnav li a.nehrp {
+	padding-top: 5px; font-size: 0.75em; margin-left: 160px;
+}
+#usgsnav li a.nehrp .e {
+	color: rgb(153, 0, 0);
+}
+.usagov {
+	top: 2.5em; float: none; position: absolute;
+}
+.takepride {
+	top: 2.5em; float: none; position: absolute;
+}
+#usgsnav li a.usagov {
+	width: 90px; right: 55px;
+}
+#usgsnav li a.takepride {
+	width: 60px; right: -8px;
+}
+#footer {
+	background: url("/template/images/bg-footer.jpg") repeat-x 0px -40px rgb(255, 255, 255); clear: both;
+}
+#footer p {
+	margin: 0px auto; padding: 6px 0px 6px 16px; width: 960px;
+}
+#usgsnav a:hover::after {
+	content: none;
+}
+#sections {
+	font: 1em/normal "Lucida Grande", Verdana, sans-serif; height: 30px; margin-bottom: 15px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid; position: relative; font-size-adjust: none; font-stretch: normal;
+}
+#sections ul {
+	margin: 0px 0px -1px; padding: 0px; left: 15px; bottom: 0px; position: absolute;
+}
+#sections ul li {
+	margin: 0px; padding: 0px; display: inline;
+}
+#sections ul li#back {
+	margin-left: 2em;
+}
+#sections li#back a {
+	padding: 0px; float: none;
+}
+#sections a {
+	background: url("/images/tabs/tabs-left.gif") no-repeat left top; margin: 0px; padding: 0px 0px 0px 10px; color: rgb(68, 68, 68); text-decoration: none; float: left;
+}
+#sections a span {
+	background: url("/images/tabs/tabs-right.gif") no-repeat right top; margin: 0px; padding: 4px 10px 3px 0px; float: left; display: block; cursor: pointer;
+}
+#sections li.selected a {
+	background-position: 0px -150px; border-width: 0px; color: rgb(34, 34, 34); font-weight: bold;
+}
+#sections li.selected a span {
+	background-position: 100% -150px;
+}
+#sections a:hover {
+	color: rgb(0, 0, 0);
+}
+#sections li.selected a:hover {
+	color: rgb(0, 0, 0);
+}
+table.tabular {
+	margin: 0px 0px 1em;
+}
+table.tabular th {
+	padding: 3px 10px; border: 1px solid rgb(255, 255, 255);
+}
+table.tabular td {
+	padding: 3px 10px; border: 1px solid rgb(255, 255, 255);
+}
+table.tabular th {
+	text-align: left; font-weight: bold; background-color: rgb(204, 204, 204);
+}
+table.tabular td {
+	background-color: rgb(238, 238, 238);
+}
+ul.referencelist li {
+	list-style: none; margin: 1.25em 0px; padding: 0px 0px 0px 3em; line-height: 1.4em; text-indent: -3em;
+}
+ul.referencelist li p.note {
+	margin: 1em 1.5em 0px 0px; padding: 0px; border: 1px solid rgb(255, 255, 255); color: rgb(85, 85, 85); text-indent: 0px; font-size: 0.85em;
+}
+#nav-alpha {
+	background: rgb(238, 238, 238); margin: 1.5em 16px 1.5em 0px; padding: 0.6em 10px; border: 1px solid rgb(204, 204, 204); font-size: 1.2em;
+}
+.jumplist {
+	background: rgb(238, 238, 238); margin: 1.5em 16px 1.5em 0px; padding: 0.6em 10px; border: 1px solid rgb(204, 204, 204); font-size: 1.2em;
+}
+#footer .disclaimer {
+	margin: 0px auto; padding: 6px 0px 6px 16px; width: 960px; color: rgb(0, 0, 0); display: block;
+}
+.disclaimer {
+	color: rgb(153, 153, 153); font-size: 0.85em;
+}
+.date {
+	color: rgb(119, 119, 119); font-family: Georgia, Times, serif; font-size: 0.9em; font-style: normal;
+}
+.column h2 {
+	background: url("/template/images/bg-headers3.gif") repeat-x left -5px rgb(235, 234, 227); padding: 3px 6px 2px; color: rgb(58, 47, 32); clear: both; font-size: 15px; font-weight: bold;
+}
+h2.section {
+	background: url("/template/images/bg-headers3.gif") repeat-x left -5px rgb(235, 234, 227); padding: 3px 6px 2px; color: rgb(58, 47, 32); clear: both; font-size: 15px; font-weight: bold;
+}
+h3.section {
+	background: url("/template/images/bg-headers3.gif") repeat-x left -5px rgb(235, 234, 227); padding: 3px 6px 2px; color: rgb(58, 47, 32); clear: both; font-size: 15px; font-weight: bold;
+}
+.column h2 a {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+h2.section a {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+h3.section a {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+.column h2 a:hover {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+h2.section a:hover {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+h3.section a:hover {
+	color: rgb(58, 47, 32); text-decoration: none; display: block;
+}
+.clear {
+	clear: both;
+}
+.addthis_button img {
+	margin-top: 1em;
+}

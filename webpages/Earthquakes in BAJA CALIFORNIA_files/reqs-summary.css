@@ -1,0 +1,90 @@
+h1 {
+	text-transform: capitalize;
+}
+hr {
+	color: rgb(204, 204, 204); margin-top: 2em;
+}
+#main > p {
+	float: right; position: relative; z-index: 10;
+}
+td {
+	background: rgb(238, 238, 238);
+}
+th {
+	background: rgb(221, 221, 221); width: 134px;
+}
+td {
+	padding: 3px 8px; border: 1px solid rgb(255, 255, 255);
+}
+th {
+	padding: 3px 8px; border: 1px solid rgb(255, 255, 255);
+}
+th a {
+	text-align: right; color: rgb(0, 0, 0); font-weight: bold; display: block;
+}
+ul {
+	list-style: none; margin: 0px;
+}
+#details-active ul {
+	margin-top: 1em;
+}
+td li {
+	margin: 0px;
+}
+#details-active li {
+	margin: 0px;
+}
+#networks li {
+	margin: 0px;
+}
+#eq-images {
+	width: 150px; text-align: center; margin-right: 16px; float: left;
+}
+#eq-images img {
+	margin-bottom: 16px;
+}
+#maps {
+	margin-right: 0px;
+}
+#maps-active {
+	margin-right: 0px;
+}
+#maps li {
+	padding-top: 1em; clear: left; margin-left: 0px;
+}
+#maps-active li {
+	padding-top: 1em; clear: left; margin-left: 0px;
+}
+#maps li.map {
+	padding-top: 0px; clear: none;
+}
+#maps-active li.map {
+	padding-top: 0px; clear: none;
+}
+.map a img {
+	padding: 1em 22px 0px; width: 100px; overflow: hidden; display: block; max-height: 150px;
+}
+.map a br {
+	display: none;
+}
+.map span {
+	margin-top: 0.1em; display: block;
+}
+.map {
+	background: rgb(255, 255, 255); margin: 0.5em 16px 0.5em 0px; width: 144px; text-align: center; min-height: 190px;
+}
+.map a {
+	font-size: 0.9em; text-decoration: none;
+}
+hr.hide {
+	clear: left;
+}
+#networks {
+	margin-bottom: 1em;
+}
+#sections {
+	display: none !important;
+}
+#main > p {
+	display: none !important;
+}

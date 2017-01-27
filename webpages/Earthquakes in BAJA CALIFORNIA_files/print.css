@@ -1,0 +1,48 @@
+#usgsbanner ul {
+	display: none !important;
+}
+#usgstitle ul {
+	display: none !important;
+}
+#sitenav {
+	display: none !important;
+}
+#navigation {
+	display: none !important;
+}
+#sitemap {
+	display: none !important;
+}
+#usgsnav {
+	display: none !important;
+}
+#footer {
+	display: none !important;
+}
+#usgsbanner {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; width: auto; height: auto; color: rgb(0, 0, 0) !important; float: none; display: block !important;
+}
+#usgsbanner div {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; width: auto; height: auto; color: rgb(0, 0, 0) !important; float: none; display: block !important;
+}
+#usgstitle {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; width: auto; height: auto; color: rgb(0, 0, 0) !important; float: none; display: block !important;
+}
+#usgstitle div {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; width: auto; height: auto; color: rgb(0, 0, 0) !important; float: none; display: block !important;
+}
+#usgsbanner img {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; color: rgb(0, 0, 0) !important; clear: both !important; float: none !important; display: block !important;
+}
+#usgstitle p {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; color: rgb(0, 0, 0) !important; clear: both !important; float: none !important; display: block !important;
+}
+#usgstitle p a {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; color: rgb(0, 0, 0) !important; clear: both !important; float: none !important; display: block !important;
+}
+#main {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; color: rgb(0, 0, 0) !important; clear: both !important; float: none !important; display: block !important;
+}
+#content {
+	background: rgb(255, 255, 255) !important; margin: 0px !important; padding: 0px !important; color: rgb(0, 0, 0) !important; clear: both !important; float: none !important; display: block !important;
+}

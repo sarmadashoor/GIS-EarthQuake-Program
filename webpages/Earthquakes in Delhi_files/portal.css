@@ -1,0 +1,195 @@
+.ShareBookmark {
+	BACKGROUND-IMAGE: url(http://s9.addthis.com/addthis16.gif)
+}
+.IconOnTag {
+	PADDING-LEFT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center
+}
+.MagazinePaperTitle {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.HeadBg {
+	BACKGROUND-COLOR: #082052
+}
+TD {
+	FONT-FAMILY: Arial; FONT-SIZE: 10pt
+}
+BODY {
+	BACKGROUND-COLOR: white
+}
+.SiteTitle {
+	FONT-FAMILY: 'Verdana Bold', Helvetica, sans-serif; COLOR: white; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.TabBg {
+	BORDER-BOTTOM-COLOR: white; BACKGROUND-COLOR: white; BORDER-TOP-COLOR: white; BORDER-RIGHT-COLOR: white; BORDER-LEFT-COLOR: white
+}
+.OtherTabsBg {
+	BORDER-BOTTOM-COLOR: black; BACKGROUND-COLOR: dimgray; BORDER-TOP-COLOR: black; BORDER-RIGHT-COLOR: black; BORDER-LEFT-COLOR: black
+}
+.SelectedTab {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.OtherTabs {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: gainsboro; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.OtherTabs:link {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+A.OtherTabs:visited {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+A.OtherTabs:active {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+A.OtherTabs:hover {
+	COLOR: white; TEXT-DECORATION: underline
+}
+.SiteLink {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.SiteLink:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.SiteLink:visited {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+A.SiteLink:active {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+A.SiteLink:hover {
+	COLOR: white; TEXT-DECORATION: underline
+}
+.Accent {
+	COLOR: red; FONT-WEIGHT: bold
+}
+.Message {
+	BACKGROUND-COLOR: #eeeeee; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.ItemTitle {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.Head {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #333333; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.Headgs {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.SubHead {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.SubSubHead {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.Normal {
+	LINE-HEIGHT: 12px; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+.NormalTextBox {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.NormalRed {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: red; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.NormalBold {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.CommandButton {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.CommandButton:link {
+	COLOR: darkred; TEXT-DECORATION: underline
+}
+A.CommandButton:visited {
+	COLOR: darkred; TEXT-DECORATION: underline
+}
+A.CommandButton:active {
+	COLOR: darkred; TEXT-DECORATION: underline
+}
+A.CommandButton:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+H1 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #666644; FONT-SIZE: 20px; FONT-WEIGHT: normal
+}
+H2 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #666644; FONT-SIZE: 20px; FONT-WEIGHT: normal
+}
+H3 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+H4 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+H5 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+DT {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+H6 {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+TFOOT {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 12px
+}
+THEAD {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 12px
+}
+TH {
+	FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: darkred; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+A:link {
+	COLOR: midnightblue; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: darkred; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: darkred; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+SMALL {
+	FONT-SIZE: 9px
+}
+BIG {
+	FONT-SIZE: 14px
+}
+BLOCKQUOTE {
+	FONT-FAMILY: arial,Lucida Console, monospace
+}
+PRE {
+	FONT-FAMILY: Lucida Console, monospace
+}
+UL LI {
+	LIST-STYLE-TYPE: square
+}
+UL LI LI {
+	LIST-STYLE-TYPE: disc
+}
+UL LI LI LI {
+	LIST-STYLE-TYPE: circle
+}
+OL LI {
+	LIST-STYLE-TYPE: decimal
+}
+OL OL LI {
+	LIST-STYLE-TYPE: lower-alpha
+}
+OL OL OL LI {
+	LIST-STYLE-TYPE: lower-roman
+}
+HR {
+	TEXT-ALIGN: left; HEIGHT: 1pt; COLOR: #002e4f
+}
+.normalazul {
+	TEXT-INDENT: 8px; FONT-FAMILY: Arial, Verdana, Helvetica; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.textBox {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 12px; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.button {
+	BACKGROUND-IMAGE: url(/Images/ButtonBG.jpg); BORDER-BOTTOM: rgb(0,0,0) 2px ridge; TEXT-ALIGN: center; BORDER-LEFT: rgb(0,0,0) 1px solid; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; BORDER-TOP: rgb(0,0,0) 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: rgb(0,0,0) 2px ridge; TEXT-DECORATION: none
+}
+#marqueecontainer {
+	POSITION: relative; BACKGROUND-COLOR: white; PADDING-LEFT: 1px; WIDTH: 150px; HEIGHT: 130px; OVERFLOW: hidden
+}
