@@ -1,0 +1,1417 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html><HTML lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:fb><HEAD><META content="IE=9.0000" http-equiv="X-UA-Compatible">
+
+<STYLE type="text/css"></STYLE>
+
+<STYLE type="text/css"></STYLE>
+<LINK rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<STYLE type="text/css"></STYLE>
+
+<STYLE type="text/css"></STYLE>
+
+<SCRIPT type="text/javascript" src="http://platform.twitter.com/widgets.js"></SCRIPT>
+
+<SCRIPT src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.8mK89Hl4ugQ.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AItRSTO-F_zsMi6kXbNisyEib75FQPj_qA/cb=gapi.loaded_1"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="https://apis.google.com/js/plusone.js" gapi_processed="true"></SCRIPT>
+
+<SCRIPT src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.8mK89Hl4ugQ.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AItRSTO-F_zsMi6kXbNisyEib75FQPj_qA/cb=gapi.loaded_0"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="http://www.google-analytics.com/ga.js"></SCRIPT>
+
+<SCRIPT id="twitter-wjs" src="//platform.twitter.com/widgets.js"></SCRIPT>
+
+<SCRIPT id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=168213439991686"></SCRIPT>
+
+<SCRIPT type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","errorBeacon":"jserror.newrelic.com","licenseKey":"a42cfc00f1","applicationID":"228451","transactionName":"IQ1cEBMODwkDERtXWxYLVxdOEwYGAw1A","queueTime":3,"applicationTime":738,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-248.min.js","extra":""}</SCRIPT>
+
+<SCRIPT type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function a(b,c,d){function e(f){if(!c[f]){var g=c[f]={exports:{}};b[f][0].call(g.exports,function(a){var c=b[f][1][a];return e(c?c:a)},g,g.exports,a,b,c,d)}return c[f].exports}for(var f=0;f<d.length;f++)e(d[f]);return e}({1:[function(a){a("./uncaught-error");try{throw new Error}catch(b){"stack"in b&&(a("./wrap-timer.js"),a("./wrap-xhr.js"),Object.defineProperty&&a("./wrap-events.js"))}},{"./uncaught-error":2,"./wrap-events.js":3,"./wrap-timer.js":5,"./wrap-xhr.js":6}],2:[function(a,b){function c(){h+=1}function d(){h>0&&(h-=1)}function e(a,b,c){return h?h-=1:f("err",[new UncaughtException(a,b,c)]),"function"==typeof i?i.apply(this,g(arguments)):!1}function UncaughtException(a,b,c){this.message=a||"Uncaught error with no additional information",this.sourceURL=b,this.line=c}var f=a("handle"),g=a("lodash._slice"),h=0;b.exports={skipNextUncaught:c,didNotThrow:d};var i=window.onerror;window.onerror=e},{handle:"4O2Y62","lodash._slice":13}],3:[function(a){function b(a){var b=a.addEventListener,f=a.removeEventListener;a.addEventListener=function(a,f,g){var h=e.apply(arguments);if(!f)return b.apply(this,h);var i=a+!!g+d(this);return f.hasOwnProperty("__nr_listened")||(f.__nr_listened={}),f.__nr_listened.hasOwnProperty(i)?void 0:(f.__nr_listened[i]=h[1]="function"==typeof f?c(f):c(f.handleEvent),b.apply(this,h))},a.removeEventListener=function(a,b,c){var d=e.apply(arguments);if(!b)return f.call(this,a,b,c);var g=0;if(this.__nr&&(g=this.__nr),!b.hasOwnProperty("__nr_listened")||!this.hasOwnProperty("__nr")&&this!==window)return f.apply(this,d);var h=a+!!c+g;return b.__nr_listened.hasOwnProperty(h)?(d[1]=b.__nr_listened[h],delete b.__nr_listened[h],f.apply(this,d)):f.apply(this,d)}}var c=a("./wrap-fn"),d=a("id"),e=Array.prototype.slice;if("addEventListener"in window&&b(window),Object.hasOwnProperty("getPrototypeOf")){for(var f=document;f&&!f.hasOwnProperty("addEventListener");)f=Object.getPrototypeOf(f);f&&b(f)}},{"./wrap-fn":4,id:"SvQ0B+"}],4:[function(a,b){function c(a){function errorWrapper(){var b=!1;try{return d.skipNextUncaught(),a.apply(this,arguments)}catch(c){throw b=!0,e("err",[c,(new Date).getTime()]),c}finally{b||d.didNotThrow()}}return"function"!=typeof a?a:a._wrapped?a:(errorWrapper._wrapped=!0,errorWrapper)}var d=a("./uncaught-error"),e=a("handle");b.exports=c},{"./uncaught-error":2,handle:"4O2Y62"}],5:[function(a){function b(a){function b(a){var b=c(arguments);return"string"==typeof a&&(a=new Function(a)),b[0]=d(a),e.apply(this,b)}var e=this[a];"function"==typeof e&&(e._wrapped||(this[a]=b,b._wrapped=!0))}var c=a("lodash._slice"),d=a("./wrap-fn");b("setTimeout"),b("setInterval"),b("setImmediate")},{"./wrap-fn":4,"lodash._slice":13}],6:[function(a){function b(){var a,b,d;for(d=0;f>d;d++)a=e[d],b=this[a],b&&b.apply&&!b._wrapped&&(this[a]=c(b))}var c=a("./wrap-fn"),d=window.XMLHttpRequest,e=["onload","onerror","onabort","onloadstart","onloadend","onprogress","onreadystatechange","ontimeout"],f=e.length;window.XMLHttpRequest=function(a){var c=new d(a);return c.addEventListener("readystatechange",b,!1),c},window.XMLHttpRequest.prototype=d.prototype},{"./wrap-fn":4}],handle:[function(a,b){b.exports=a("4O2Y62")},{}],"4O2Y62":[function(a,b){function c(a,b){var c=d[a];return c?c.apply(this,b):(e[a]||(e[a]=[]),e[a].push(b),void 0)}var d={},e={};b.exports=c,c.queues=e,c.handlers=d},{}],id:[function(a,b){b.exports=a("SvQ0B+")},{}],"SvQ0B+":[function(a,b){function c(a){if(a===window)return 0;if(e.call(a,"__nr"))return a.__nr;try{return Object.defineProperty(a,"__nr",{value:d,writable:!1,configurable:!1,enumerable:!1}),d}catch(b){return a.__nr=d,d}finally{d+=1}}var d=1,e=Object.prototype.hasOwnProperty;b.exports=c},{}],YLUGVp:[function(a,b){function c(){var a=m.info=NREUM.info,b=m.proto="http"+(a.sslForHttp?"s":"s"==l[4]?"s":"")+"://";if(a&&a.agent&&a.licenseKey&&a.applicationID){f("mark",["onload",e()]);var c=h.createElement("script");c.src=b+a.agent,h.body.appendChild(c)}}function d(){"complete"===h.readyState&&f("mark",["domContent",e()])}function e(){return(new Date).getTime()}var f=a("handle"),g=window,h=g.document,i="readystatechange",j="addEventListener",k="attachEvent",l=(""+location).split("?")[0],m=b.exports={offset:e(),origin:l};h[j]?(h[j](i,d,!1),g[j]("load",c,!1)):(h[k]("on"+i,d),g[k]("onload",c)),f("mark",["firstbyte",e()])},{handle:"4O2Y62"}],loader:[function(a,b){b.exports=a("YLUGVp")},{}],13:[function(a,b){function c(a,b,c){b||(b=0),"undefined"==typeof c&&(c=a?a.length:0);for(var d=-1,e=c-b||0,f=Array(0>e?0:e);++d<e;)f[d]=a[b+d];return f}b.exports=c},{}]},{},["YLUGVp",1]);</SCRIPT>
+<TITLE>List of Earthquakes in Nagoya, Aichi, Japan - Most Recent</TITLE><LINK 
+rel="stylesheet" type="text/css" href="http://earthquaketrack.com/assets/style-cfb94474c6de29cd1c7cf0a00d961dcb.css" 
+media="screen"><LINK rel="shortcut icon" href="/favicon.ico">
+<SCRIPT type="text/javascript" src="http://earthquaketrack.com/assets/application-b3d63c2aec99aaa260b9c47070bf0138.js"></SCRIPT>
+
+<META name="description" content="Epicenters and Locations of the Latest Quakes Near Nagoya, Aichi, Japan">
+<META content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<META name="csrf-param" content="authenticity_token">
+<META name="csrf-token" content="RrcdtyKU6Fxm063gCjTd9NI8ck/5cPSiq4IxDbDQDvY=">
+<STYLE></STYLE>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/15/5/%7Bcommon,map,util,marker,geometry,poly%7D.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/15/5/%7Bonion,infowindow%7D.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/15/5/%7Bcontrols,stats%7D.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d21.92792231728456&amp;2d113.8565197243621&amp;2m2&amp;1d48.07275277250845&amp;2d164.45941737963415&amp;2u6&amp;4sen-US&amp;5e3&amp;6sm%40248000000&amp;7b0&amp;8e0&amp;9b0&amp;callback=_xdc_._arp86m&amp;token=31493"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d21.90267036986345&amp;2d113.72540384352169&amp;2m2&amp;1d48.01739273393141&amp;2d163.42761737513501&amp;2u6&amp;4sen-US&amp;5e3&amp;6sm%40248000000&amp;7b0&amp;8e0&amp;9b0&amp;callback=_xdc_._9w96yl&amp;token=50429"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://mt0.googleapis.com/mapslt/ft?hl=en-US&amp;lyrs=m%40248000000%7Csalt%3A1992197053&amp;las=vwuvvv,vwuvvw,vwuvwv,vwwttt,vwwttu,vwwttv,vwwttw,vwwtut,vwwtuv,vwwtvt,vwwtvu,vwwtwt&amp;z=6&amp;src=apiv3&amp;xc=1&amp;style=50%2C37%7Csmartmaps&amp;callback=_xdc_._aselcd&amp;token=84311"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://mt0.googleapis.com/mapslt/ft?hl=en-US&amp;lyrs=m%40248000000%7Csalt%3A1992197053&amp;las=vwuvvt,vwuvvu,vwuvvv,vwuvvw,vwuvwt,vwuvwv,vwwttt,vwwttu,vwwttv,vwwttw,vwwtut,vwwtuv,vwwtvt,vwwtvu,vwwtwt&amp;z=6&amp;src=apiv3&amp;xc=1&amp;style=50%2C37%7Csmartmaps&amp;callback=_xdc_._3r9jtf&amp;token=87979"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;5e1&amp;callback=_xdc_._dg8x4m&amp;token=34244"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttp%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;4e1&amp;5e0&amp;6u1&amp;7s24wpc7&amp;callback=_xdc_._fc7sl1&amp;token=21909"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttp%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;4e1&amp;5e0&amp;6u1&amp;7s24wpc8&amp;callback=_xdc_._fc7sl2&amp;token=88079"></SCRIPT>
+</HEAD>
+<BODY data-twttr-rendered="true">
+<DIV class="container"><NAV id="header" class="navbar navbar-default navbar-static-top">
+<DIV class="navbar-header"><A class="navbar-brand" href="/">Earthquake Track</A>
+<BUTTON class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<SPAN class="sr-only">Toggle navigation</SPAN><SPAN class="icon-bar"></SPAN>
+<SPAN class="icon-bar"></SPAN><SPAN class="icon-bar"></SPAN></BUTTON></DIV>
+<DIV class="collapse navbar-collapse navbar-ex1-collapse">
+<UL class="navbar-nav nav">
+  <LI><A href="/recent">Today's Earthquakes</A></LI>
+  <LI><A href="/biggest">Big Quakes</A></LI>
+  <LI class="dropdown"><A class="dropdown-toggle" href="#" data-toggle="dropdown">
+  Places<B class="caret"></B></A>
+  <UL class="dropdown-menu">
+    <LI><A title="LA and Southern California" href="/v/la/recent">LA</A></LI>
+    <LI><A title="San Francisco Bay Area, California" 
+    href="/v/sf/recent">SF</A></LI>
+    <LI><A title="South America" href="/v/southamerica/recent">South 
+    America</A></LI>
+    <LI><A title="Southeast Asia" href="/v/seasia/recent">SE Asia</A></LI>
+    <LI><A title="Europe" href="/v/europe/recent">Europe</A></LI>
+    <LI><A title="Asia" href="/v/asia/recent">Asia</A></LI>
+    <LI><A title="Japan" href="/p/japan/recent">Japan</A></LI>
+    <LI><A title="NZ" href="/p/new-zealand/recent">NZ</A></LI>
+    <LI><A title="US" href="/p/united-states/recent">US</A></LI>
+    <LI><A title="BC" href="/p/canada/british-columbia/recent">BC</A></LI></UL>
+  </LI></UL>
+<DIV id="search" class="navbar-form navbar-left">
+<FORM accept-charset="UTF-8" method="get" action="/search">
+<DIV style="margin: 0px; padding: 0px; display: inline;"><INPUT name="utf8" 
+value="✓" type="hidden"></DIV>
+<DIV class="form-group"><INPUT id="q" class="form-control" name="q" type="text" 
+placeholder="Quakes Near..."></DIV>
+<DIV class="form-group"><INPUT class="form-control" name="commit" value="Go" type="submit"></DIV>
+</FORM></DIV>
+<DIV class="navbar-left">
+<UL class="sharing nav navbar-text navbar-nav navbar-right">
+  <LI class="share">
+  <DIV style="margin: 0px; padding: 0px; width: 32px; height: 20px; line-height: normal; text-indent: 0px; font-size: 1px; vertical-align: baseline; float: none; display: inline-block;" 
+  id="___plusone_0"><IFRAME style="margin: 0px; left: 0px; top: 0px; width: 32px; height: 20px; visibility: visible; position: static;" 
+  id="I0_1388916299648" title="+1" tabIndex="0" vspace="0" marginHeight="0" src="https://apis.google.com/u/0/_/+1/fastbutton?usegapi=1&amp;bsv=o&amp;annotation=none&amp;size=medium&amp;origin=http%3A%2F%2Fearthquaketrack.com&amp;url=http%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.8mK89Hl4ugQ.O%2Fm%3D__features__%2Fam%3DEQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTO-F_zsMi6kXbNisyEib75FQPj_qA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1388916299648&amp;parent=http%3A%2F%2Fearthquaketrack.com&amp;pfname=&amp;rpctoken=45802047" 
+  frameBorder="0" width="100%" name="I0_1388916299648" marginWidth="0" 
+  scrolling="no" hspace="0" data-gapiattached="true"></IFRAME></DIV>
+<SCRIPT type="text/javascript" async="true">
+    $(function() {
+        var po = document.createElement('script'); po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     });
+  </SCRIPT>
+  </LI>
+  <LI class="share fb">
+  <DIV id="fb-root" class=" fb_reset">
+  <DIV style="top: -10000px; width: 0px; height: 0px; position: absolute;">
+  <DIV><IFRAME aria-hidden="true" style="border: currentColor;" id="fb_xdm_frame_http" 
+  title="Facebook Cross Domain Communication Frame" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=28#channel=fd9590db0bc1e7&amp;channel_path=%2Fjp-01-nagoya%2Frecent%3Ffb_xd_fragment%23xd_sig%3Df11371b67fe6739%26&amp;origin=http%3A%2F%2Fearthquaketrack.com" 
+  frameBorder="0" allowTransparency="true" name="fb_xdm_frame_http" scrolling="no" 
+  tab-index="-1"></IFRAME><IFRAME aria-hidden="true" style="border: currentColor;" 
+  id="fb_xdm_frame_https" title="Facebook Cross Domain Communication Frame" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=28#channel=fd9590db0bc1e7&amp;channel_path=%2Fjp-01-nagoya%2Frecent%3Ffb_xd_fragment%23xd_sig%3Df11371b67fe6739%26&amp;origin=http%3A%2F%2Fearthquaketrack.com" 
+  frameBorder="0" allowTransparency="true" name="fb_xdm_frame_https" scrolling="no" 
+  tab-index="-1"></IFRAME></DIV></DIV>
+  <DIV style="top: -10000px; width: 0px; height: 0px; position: absolute;">
+  <DIV></DIV></DIV></DIV>
+<SCRIPT async="true">(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=168213439991686";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</SCRIPT>
+
+  <DIV class="fb-like fb_edge_widget_with_comment fb_iframe_widget" 
+  data-show-faces="true" data-width="90" data-layout="button_count" data-send="false" 
+  data-href="http://earthquaketrack.com/jp-01-nagoya/recent" fb-xfbml-state="rendered"><SPAN 
+  style="width: 76px; height: 20px;"><IFRAME style="border: currentColor; width: 76px; height: 20px;" 
+  id="f3e51ec17c5de14" onload="FB.__globalCallbacks.f17a944f526c3b6()" class="fb_ltr" 
+  title="Like this content on Facebook." src="http://www.facebook.com/plugins/like.php?api_key=168213439991686&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df32df782c854342%26domain%3Dearthquaketrack.com%26origin%3Dhttp%253A%252F%252Fearthquaketrack.com%252Ffd9590db0bc1e7%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90" 
+  frameBorder="0" allowTransparency="true" name="f15eb533a674258" 
+  scrolling="no"></IFRAME></SPAN></DIV></LI>
+  <LI class="share"><IFRAME style="width: 107px; height: 20px;" id="twitter-widget-0" 
+  class="twitter-share-button twitter-tweet-button twitter-count-horizontal" 
+  title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.1387492107.html#_=1388916300239&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;size=m&amp;text=List%20of%20Earthquakes%20in%20Nagoya%2C%20Aichi%2C%20Japan%20-%20Most%20Recent&amp;url=http%3A%2F%2Fearthquaketrack.com%2Fjp-01-nagoya%2Frecent&amp;via=quakesToday" 
+  frameBorder="0" allowTransparency="true" scrolling="no" data-twttr-rendered="true"></IFRAME>
+<SCRIPT type="text/javascript" async="true">
+      $(function() {
+          var po = document.createElement('script'); po.type = 'text/javascript';
+          po.async = true;
+          po.src = 'http://platform.twitter.com/widgets.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+       });
+    </SCRIPT>
+  </LI></UL></DIV></DIV></NAV>
+<DIV id="content">
+<H1>    Recent Earthquake Near Nagoya, Aichi, Japan  
+<DIV class="btn-group"><BUTTON class="btn btn-default dropdown-toggle" type="button" 
+data-toggle="dropdown">        Recent Quakes    <SPAN 
+class="caret"></SPAN></BUTTON>
+<UL class="dropdown-menu" role="menu">
+  <LI class="tab active"><A class="active" title="Latest Quakes Near Nagoya" 
+  href="/jp-01-nagoya/recent">Recent Quakes</A></LI>
+  <LI class="tab "><A title="Biggest Quakes Near Nagoya" href="/jp-01-nagoya/biggest">Biggest 
+  Quakes</A></LI></UL></DIV>
+<DIV class="btn-group"><BUTTON class="btn btn-default dropdown-toggle" type="button" 
+data-toggle="dropdown">    Nearby Places    <SPAN class="caret"></SPAN></BUTTON>
+<UL class="dropdown-menu" role="menu">
+  <LI><A title="Southeast Asia" href="/v/seasia">Southeast Asia</A></LI>
+  <LI><A title="Asia" href="/v/asia">Asia</A></LI>
+  <LI class="divider"></LI>
+  <LI><A title="Chiba, Japan" href="/jp-04-chiba/recent">Chiba, Japan</A></LI>
+  <LI><A title="Kawasaki, Kanagawa, Japan" 
+  href="/jp-19-kawasaki/recent">Kawasaki, Kanagawa, Japan</A></LI>
+  <LI><A title="Yokohama, Kanagawa, Japan" 
+  href="/jp-19-yokohama/recent">Yokohama, Kanagawa, Japan</A></LI>
+  <LI><A title="Tokyo, Japan" href="/jp-40-tokyo/recent">Tokyo, Japan</A></LI>
+  <LI class="divider"></LI>
+  <LI><A title="Near S. Coast Of Honshu, Japan" href="/r/near-s-coast-of-honshu-japan/recent">Near 
+  S. Coast Of Honshu, Japan</A></LI>
+  <LI><A title="Near S. Coast Of Western Honshu" href="/r/near-s-coast-of-western-honshu/recent">Near 
+  S. Coast Of Western Honshu</A></LI>
+  <LI><A title="Western Honshu, Japan" 
+  href="/r/western-honshu-japan/recent">Western Honshu, Japan</A></LI>
+  <LI><A title="Near West Coast Of Honshu, Japan" href="/r/near-west-coast-of-honshu-japan/recent">Near 
+  West Coast Of Honshu, Japan</A></LI>
+  <LI><A title="Eastern Honshu, Japan" 
+  href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></LI>
+  <LI><A title="Shikoku, Japan" href="/r/shikoku-japan/recent">Shikoku, 
+  Japan</A></LI>
+  <LI><A title="Near East Coast Of Honshu, Japan" href="/r/near-east-coast-of-honshu-japan/recent">Near 
+  East Coast Of Honshu, Japan</A></LI>
+  <LI><A title="Izu Islands, Japan" href="/r/izu-islands-japan/recent">Izu 
+  Islands, Japan</A></LI>
+  <LI><A title="Southeast Of Shikoku, Japan" href="/r/southeast-of-shikoku-japan/recent">Southeast 
+  Of Shikoku, Japan</A></LI>
+  <LI><A title="East Sea" href="/r/east-sea/recent">East Sea</A></LI>
+  <LI><A title="Korea Strait" href="/r/korea-strait/recent">Korea 
+Strait</A></LI>
+  <LI><A title="East Coast Of Honshu, Japan" href="/r/east-coast-of-honshu-japan/recent">East 
+  Coast Of Honshu, Japan</A></LI></UL></DIV></H1>
+<DIV class="tab-content">
+<DIV class="city-stats row panel panel-default">
+<DIV style="z-index: 1;" class="col-lg-4 col-xs-6">
+<H4>Nagoya has had:</H4>
+<UL>
+  <LI>0 earthquakes today</LI>
+  <LI>3 earthquakes in the past 7 days</LI>
+  <LI>7 earthquakes in the past month</LI>
+  <LI>44 earthquakes in the past year</LI></UL></DIV>
+<DIV style="z-index: 1;" class="col-lg-4 col-xs-6">
+<H4>The largest earthquake in Nagoya:</H4>
+<UL>
+  <LI>
+  <DIV class="text-warning">              this week: <A href="http://earthquaketrack.com/quakes/2013-12-31-01-03-00-utc-5-1-9">5.1</A> 
+  in                  <A href="/jp-14-takahagi/recent">Takahagi</A>,        <A 
+  href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A 
+  href="/p/japan/recent">Japan</A></DIV></LI>
+  <LI>
+  <DIV class="text-warning">              this month: <A href="http://earthquaketrack.com/quakes/2013-12-14-04-06-14-utc-5-4-36">5.4</A> 
+  in                  <A href="/jp-04-asahi/recent">Asahi</A>,        <A href="/p/japan/chiba/recent">Chiba</A>, 
+       <A href="/p/japan/recent">Japan</A></DIV></LI>
+  <LI>
+  <DIV class="text-warning">              this year: <A href="http://earthquaketrack.com/quakes/2013-11-18-19-10-45-utc-5-7-332">5.7</A> 
+  in                  <A href="/jp-23-toba/recent">Toba</A>,        <A href="/p/japan/mie/recent">Mie</A>, 
+       <A href="/p/japan/recent">Japan</A></DIV></LI></UL></DIV>
+<DIV style="z-index: 0;" class="col-lg-4 col-xs-12">
+<DIV style="text-align: center;" class="success">
+<H4>Japan<BR>Earthquake Alerts via Twitter:</H4><IFRAME style="width: 180px; height: 28px;" 
+id="twitter-widget-1" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" 
+src="http://platform.twitter.com/widgets/follow_button.1387492107.html#_=1388916300243&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=QuakesJapan&amp;show_count=false&amp;show_screen_name=true&amp;size=l" 
+frameBorder="0" allowTransparency="true" scrolling="no" data-twttr-rendered="true"></IFRAME>
+<SCRIPT>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</SCRIPT>
+</DIV></DIV></DIV>
+<STYLE>
+.responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive { width: 728px; height: 90px; } }
+@media(min-width: 1000px) { .responsive { width: 970px; height: 90px; } }
+</STYLE>
+
+<SCRIPT src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+<!-- responsive -->
+<P class="text-center"><INS style="width: 970px; height: 90px; display: inline-block;" 
+class="adsbygoogle responsive" data-ad-slot="8606642025" data-ad-client="ca-pub-6219004123561661" 
+data-adsbygoogle-status="done"><INS style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: inline-table; visibility: visible; position: relative; background-color: transparent;"><INS 
+style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: block; visibility: visible; position: relative; background-color: transparent;" 
+id="aswift_0_anchor"><IFRAME style="left: 0px; top: 0px; position: absolute;" 
+id="aswift_0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" 
+vspace="0" height="90" marginHeight="0" frameBorder="0" width="970" 
+allowTransparency="true" name="aswift_0" marginWidth="0" scrolling="no" hspace="0"></IFRAME></INS></INS></INS>
+</P>
+<SCRIPT>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</SCRIPT>
+
+<DIV class="quakes-near row">
+<DIV class="quakes-multi-map col-lg-8 col-md-6">
+<DIV style="overflow: hidden; position: relative; background-color: rgb(229, 227, 223);" 
+class="quakes-multi-map-canvas" data-city="35.1667,136.917" data-depths="25;34;9;33;35;67;36;12;69;71" 
+data-magnitudes="4.8;4.7;5.1;4.7;5.3;5.3;5.4;4.6;4.6;5.0" data-coordinates="35.266,140.451;35.236,140.361;36.789,140.591;33.499,139.021;35.579,140.73;35.834,140.045;35.621,140.686;35.992,140.762;36.268,140.416;35.592,139.978" 
+data-loaded="true">
+<DIV style="background: rgb(255, 255, 255); padding: 0px 1px 1px; border-radius: 2px; border: 1px solid rgb(169, 187, 223); top: 6px; right: 115px; position: absolute; z-index: 10000;" 
+class="map-toggle"><LABEL><INPUT title="Show Magnitude" CHECKED="checked" type="checkbox"></LABEL></DIV>
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: 0;" 
+class="gm-style">
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 1; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 200;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 101;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 30;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 191px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 447px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 191px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 191px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 447px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 447px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 201;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 102;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 103;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: -1;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 191px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 447px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 191px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 191px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 447px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 447px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: 157px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -65px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: -99px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 703px; top: 413px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 202;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 104;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 105;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 106;">
+<DIV style="display: none; z-index: -202; cursor: pointer;">
+<DIV 
+style="width: 30px; height: 27px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 90px; height: 27px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/undo_poly.png" 
+unselectable="on"></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 100;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 191px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 447px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 191px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 191px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 447px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 447px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -65px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 703px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -65px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -65px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 703px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 703px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV></DIV></DIV></DIV>
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="width: 750px; height: 470px; overflow: hidden;"><IMG style="width: 750px; height: 470px;" 
+src="http://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&amp;1i14145&amp;2i6243&amp;2e2&amp;3u6&amp;4m2&amp;1u750&amp;2u470&amp;5m4&amp;1e3&amp;5sen-US&amp;6sus&amp;10b1&amp;token=127942" 
+width="750" height="470"></DIV></DIV>
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 191px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=25&amp;z=6&amp;token=59246" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 447px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=25&amp;z=6&amp;token=128877" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 191px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=24&amp;z=6&amp;token=68164" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 191px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=26&amp;z=6&amp;token=50328" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 447px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=24&amp;z=6&amp;token=6724" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 447px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=26&amp;z=6&amp;token=119959" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -65px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=25&amp;z=6&amp;token=120686" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 703px; top: 157px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=25&amp;z=6&amp;token=67437" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -65px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=24&amp;z=6&amp;token=129604" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -65px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=26&amp;z=6&amp;token=111768" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 703px; top: -99px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=24&amp;z=6&amp;token=76355" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 703px; top: 413px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=26&amp;z=6&amp;token=58519" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV></DIV></DIV></DIV></DIV>
+<DIV style="left: 0px; bottom: 0px; margin-right: 5px; margin-left: 5px; position: absolute; z-index: 1000000;"><A 
+style="overflow: visible; float: none; display: inline; position: static;" 
+title="Click to see this area on Google Maps" href="http://maps.google.com/maps?ll=35.210831,139.052768&amp;z=6&amp;t=h&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" 
+target="_blank">
+<DIV style="width: 62px; height: 26px; cursor: pointer;"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 62px; height: 26px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png" width="1" 
+height="1" unselectable="on">
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV></DIV></A></DIV>
+<DIV style="width: 430px; right: 72px; bottom: 0px; position: absolute; z-index: 1000001;" 
+class="gmnoprint">
+<DIV class="gm-style-cc" unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); text-decoration: none; display: none; cursor: pointer;">Map 
+Data</A><SPAN>Map data ©2014 AutoNavi, Google, Kingway, SK planet, ZENRIN  
+Imagery ©2014 TerraMetrics</SPAN></DIV></DIV></DIV>
+<DIV style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); left: 225px; top: 145px; width: 256px; height: 148px; color: rgb(34, 34, 34); font-family: Roboto,Arial,sans-serif; display: none; position: absolute; z-index: 10000002; box-shadow: 0px 4px 16px rgba(0,0,0,0.2); background-color: white;">
+<DIV style="padding: 0px 0px 10px; font-size: 16px;">Map Data</DIV>
+<DIV style="font-size: 13px;">Map data ©2014 AutoNavi, Google, Kingway, SK 
+planet, ZENRIN  Imagery ©2014 TerraMetrics</DIV>
+<DIV style="top: 12px; width: 13px; height: 13px; right: 12px; overflow: hidden; position: absolute; z-index: 10000; cursor: pointer; opacity: 0.7;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -2px; top: -336px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute;" class="gmnoscreen">
+<DIV style="text-align: right; color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 11px; direction: ltr; background-color: rgb(245, 245, 245);">Map 
+data ©2014 AutoNavi, Google, Kingway, SK planet, ZENRIN&nbsp; Imagery ©2014 
+TerraMetrics</DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute; z-index: 1000001;" 
+class="gmnoprint gm-style-cc" unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer;" href="http://www.google.com/intl/en-US_US/help/terms_maps.html" 
+target="_blank">Terms of Use</A></DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute;" class="gm-style-cc" 
+unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; display: none; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 10px; text-decoration: none; position: relative;" 
+title="Report errors in the road map or imagery to Google" href="http://maps.google.com/maps?ll=35.210831,139.052768&amp;z=6&amp;t=h&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3&amp;skstate=action:mps_dialog$apiref:1&amp;output=classic" 
+target="_new">Report a map error</A></DIV></DIV>
+<DIV style="margin: 5px; left: 0px; top: 0px; position: absolute;" class="gmnoprint" 
+unselectable="on" controlWidth="78" controlHeight="340">
+<DIV style="left: 0px; top: 0px; width: 78px; height: 78px; position: absolute; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+class="gmnoprint" controlWidth="78" controlHeight="80">
+<DIV style="left: 0px; top: 0px; width: 78px; height: 78px; position: absolute;" 
+class="gmnoprint" controlWidth="78" controlHeight="80">
+<DIV style="visibility: hidden;"><svg xmlns="http://www.w3.org/2000/svg" 
+overflow="hidden" style="left: 0px; top: 0px; position: absolute;" viewBox="0 0 78 78" 
+width="78px" height="78px" version="1.1"><circle fill="#f2f4f6" fill-opacity="0.2" 
+stroke="#f2f4f6" stroke-width="3" cx="39" cy="39" r="35" /><g transform="rotate(0)"><rect 
+fill="#f2f4f6" stroke="#a6a6a6" stroke-width="1" x="33" y="0" width="12" 
+height="11" rx="4" ry="4" /><polyline fill="#f2f4f6" stroke="#000" 
+stroke-linejoin="bevel" stroke-width="1.5" points="36.5,8.5 36.5,2.5 41.5,8.5 41.5,2.5" 
+/></g></svg></DIV></DIV>
+<DIV style="left: 10px; top: 11px; position: absolute;" class="gmnoprint" 
+controlWidth="59" controlHeight="59">
+<DIV 
+style="width: 59px; height: 59px; overflow: hidden; position: relative;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on">
+<DIV style="left: 0px; top: 20px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan left"></DIV>
+<DIV style="left: 39px; top: 20px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan right"></DIV>
+<DIV style="left: 20px; top: 0px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan up"></DIV>
+<DIV style="left: 20px; top: 39px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan down"></DIV></DIV></DIV></DIV>
+<DIV style="left: 23px; top: 85px; position: absolute; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+controlWidth="32" controlHeight="40">
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -9px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -107px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -58px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -205px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="display: none; position: absolute; opacity: 0.6;" class="gmnoprint" 
+controlWidth="0" controlHeight="0">
+<DIV style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;" 
+title="Rotate map 90 degrees"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -38px; top: -360px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="left: 27px; top: 130px; position: absolute;" class="gmnoprint" 
+controlWidth="25" controlHeight="210">
+<DIV style="width: 23px; height: 24px; overflow: hidden; position: relative; z-index: 1; cursor: pointer;" 
+title="Zoom in"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -400px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="top: -4px; width: 25px; height: 162px; overflow: hidden; position: relative; cursor: pointer;" 
+title="Click to zoom"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -87px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 2px; top: 124px; width: 21px; height: 14px; overflow: hidden; position: absolute; z-index: 2; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+title="Drag to zoom"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: -384px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="top: -4px; width: 23px; height: 23px; overflow: hidden; position: relative; z-index: 3; cursor: pointer;" 
+title="Zoom out"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -361px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV></DIV>
+<DIV style="margin: 5px; top: 0px; right: 0px; position: absolute; z-index: 0; cursor: pointer;" 
+class="gmnoprint">
+<DIV style="float: left;" class="gm-style-mtc">
+<DIV style="padding: 1px 6px; border: 1px solid rgba(0, 0, 0, 0.15); text-align: center; color: rgb(86, 86, 86); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; position: relative; direction: ltr; min-width: 24px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: rgb(255, 255, 255);" 
+title="Show street map" unselectable="on">Map</DIV>
+<DIV style="border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15); left: 0px; top: 20px; text-align: left; padding-top: 2px; display: none; position: absolute; z-index: -1; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: white;">
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Show street map with terrain" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">Terrain</LABEL></DIV></DIV></DIV>
+<DIV style="float: left;" class="gm-style-mtc">
+<DIV style="border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) currentColor; padding: 1px 6px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; font-weight: 500; position: relative; direction: ltr; min-width: 42px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: rgb(255, 255, 255);" 
+title="Show satellite imagery" unselectable="on">Satellite</DIV>
+<DIV style="border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15); top: 20px; text-align: left; right: 0px; padding-top: 2px; display: none; position: absolute; z-index: -1; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: white;">
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(184, 184, 184); font-family: Roboto,Arial,sans-serif; font-size: 11px; display: none; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Zoom in to show 45 degree view" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(241, 241, 241); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox" disabled="">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">45°</LABEL></DIV>
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Show imagery with street names" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">Labels</LABEL></DIV></DIV></DIV></DIV></DIV></DIV>
+<BR class="clear"></DIV>
+<DIV class="quakes-info col-lg-4 col-md-6">
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="0">
+<DIV style="cursor: pointer;" class="marker marker-brown"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2014-01-02-13-11-05-utc-4-8-25"><ABBR class="timeago" title="2014-01-02 13:11:05 UTC">3 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.8 
+magnitude</SPAN>, 25 km depth</STRONG><BR><A 
+href="/jp-04-ohara/recent">Ohara</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="0">
+<H4 class="title text-warning">4.8 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2014-01-02 13:11:05 UTC">3 days ago</ABBR>    at 
+13:11 <BR>January 02, 2014 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.266, 140.451      <BR>      
+321.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (200.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 25 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="1">
+<DIV style="cursor: pointer;" class="marker marker-paleblue"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2014-01-02-07-48-30-utc-4-7-34"><ABBR class="timeago" title="2014-01-02 07:48:30 UTC">3 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.7 
+magnitude</SPAN>, 34 km depth</STRONG><BR><A 
+href="/jp-04-ohara/recent">Ohara</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="1">
+<H4 class="title text-warning">4.7 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2014-01-02 07:48:30 UTC">3 days ago</ABBR>    at 
+07:48 <BR>January 02, 2014 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.236, 140.361      <BR>      
+313.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (194.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 34 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="2">
+<DIV style="cursor: pointer;" class="marker marker-pink"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A href="/quakes/2013-12-31-01-03-00-utc-5-1-9"><ABBR 
+class="timeago" title="2013-12-31 01:03:00 UTC">5 days 
+ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.1 magnitude</SPAN>, 
+9 km depth</STRONG><BR><A href="/jp-14-takahagi/recent">Takahagi</A>,        <A 
+href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="2">
+<H4 class="title text-warning">5.1 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-31 01:03:00 UTC">5 days ago</ABBR>    at 
+01:03 <BR>December 31, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 36.789, 140.591      <BR>      
+377.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (234.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 9 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="3">
+<DIV style="cursor: pointer;" class="marker marker-purple"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-29-01-17-53-utc-4-7-33"><ABBR class="timeago" title="2013-12-29 01:17:53 UTC">7 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.7 
+magnitude</SPAN>, 33 km depth</STRONG><BR><A 
+href="/jp-37-shimoda/recent">Shimoda</A>,        <A href="/p/japan/shizuoka/recent">Shizuoka</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="3">
+<H4 class="title text-warning">4.7 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-29 01:17:53 UTC">7 days ago</ABBR>    at 
+01:17 <BR>December 29, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 33.499, 139.021      <BR>      
+268.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (166.2 miles)  </P>
+<P><A href="/r/near-s-coast-of-honshu-japan/recent">Near S. Coast Of Honshu, 
+Japan</A></P>
+<P>Depth: 33 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="4">
+<DIV style="cursor: pointer;" class="marker marker-blue"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-21-01-34-13-utc-5-3-35"><ABBR class="timeago" title="2013-12-21 01:34:13 UTC">15 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.3 
+magnitude</SPAN>, 35 km depth</STRONG><BR><A 
+href="/jp-04-asahi/recent">Asahi</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="4">
+<H4 class="title text-warning">5.3 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-21 01:34:13 UTC">15 days ago</ABBR>    
+at 01:34 <BR>December 21, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.579, 140.73      <BR>      
+349.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (217.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 35 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="5">
+<DIV style="cursor: pointer;" class="marker marker-darkgreen"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-20-16-10-46-utc-5-3-67"><ABBR class="timeago" title="2013-12-20 16:10:46 UTC">16 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.3 
+magnitude</SPAN>, 67 km depth</STRONG><BR><A 
+href="/jp-04-shiroi/recent">Shiroi</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="5">
+<H4 class="title text-warning">5.3 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-20 16:10:46 UTC">16 days ago</ABBR>    
+at 16:10 <BR>December 20, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.834, 140.045      <BR>      
+293.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (182.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 67 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="6">
+<DIV style="cursor: pointer;" class="marker marker-green"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-14-04-06-14-utc-5-4-36"><ABBR class="timeago" title="2013-12-14 04:06:14 UTC">22 
+days ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.4 
+magnitude</SPAN>, 36 km depth</STRONG><BR><A 
+href="/jp-04-asahi/recent">Asahi</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="6">
+<H4 class="title text-warning">5.4 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-14 04:06:14 UTC">22 days ago</ABBR>    
+at 04:06 <BR>December 14, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.621, 140.686      <BR>      
+346.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (215.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 36 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="7">
+<DIV style="cursor: pointer;" class="marker marker-yellow"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-03-06-58-17-utc-4-6-12"><ABBR class="timeago" title="2013-12-03 06:58:17 UTC">about 
+a month ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.6 
+magnitude</SPAN>, 12 km depth</STRONG><BR><A 
+href="/jp-14-kashima/recent">Kashima</A>,        <A href="/p/japan/ibaraki/recent">Ibaraki</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="7">
+<H4 class="title text-warning">4.6 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-03 06:58:17 UTC">about a month 
+ago</ABBR>    at 06:58 <BR>December 03, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.992, 140.762      <BR>      
+360.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (223.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 12 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="8">
+<DIV style="cursor: pointer;" class="marker marker-orange"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-12-02-21-26-39-utc-4-6-69"><ABBR class="timeago" title="2013-12-02 21:26:39 UTC">about 
+a month ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.6 
+magnitude</SPAN>, 69 km depth</STRONG><BR><A href="/jp-14-mito/recent">Mito</A>, 
+       <A href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="8">
+<H4 class="title text-warning">4.6 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-12-02 21:26:39 UTC">about a month 
+ago</ABBR>    at 21:26 <BR>December 02, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 36.268, 140.416      <BR>      
+339.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (210.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 69 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="9">
+<DIV style="cursor: pointer;" class="marker marker-red"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-28-16-15-05-utc-5-0-71"><ABBR class="timeago" title="2013-11-28 16:15:05 UTC">about 
+a month ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.0 
+magnitude</SPAN>, 71 km depth</STRONG><BR><A 
+href="/jp-04-narashino/recent">Narashino</A>,        <A href="/p/japan/chiba/recent">Chiba</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="9">
+<H4 class="title text-warning">5.0 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-28 16:15:05 UTC">about a month 
+ago</ABBR>    at 16:15 <BR>November 28, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.592, 139.978      <BR>      
+282.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (175.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 71 km</P></DIV></DIV></DIV></DIV><BR class="clear"></DIV>
+<STYLE>
+.responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive { width: 728px; height: 90px; } }
+@media(min-width: 1000px) { .responsive { width: 970px; height: 90px; } }
+</STYLE>
+
+<SCRIPT src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+<!-- responsive -->
+<P class="text-center"><INS style="width: 970px; height: 90px; display: inline-block;" 
+class="adsbygoogle responsive" data-ad-slot="8606642025" data-ad-client="ca-pub-6219004123561661" 
+data-adsbygoogle-status="done"><INS style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: inline-table; visibility: visible; position: relative; background-color: transparent;"><INS 
+style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: block; visibility: visible; position: relative; background-color: transparent;" 
+id="aswift_1_anchor"><IFRAME style="left: 0px; top: 0px; position: absolute;" 
+id="aswift_1" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" 
+vspace="0" height="90" marginHeight="0" frameBorder="0" width="970" 
+allowTransparency="true" name="aswift_1" marginWidth="0" scrolling="no" hspace="0"></IFRAME></INS></INS></INS>
+</P>
+<SCRIPT>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</SCRIPT>
+
+<DIV class="quakes-near row">
+<DIV class="quakes-multi-map col-lg-8 col-md-6">
+<DIV style="overflow: hidden; position: relative; background-color: rgb(229, 227, 223);" 
+class="quakes-multi-map-canvas" data-city="35.1667,136.917" data-depths="332;71;63;63;65;65;50;51;387;110" 
+data-magnitudes="5.7;4.7;4.5;5.5;5.6;5.0;4.4;4.7;4.2;4.5" data-coordinates="34.34,137.073;35.543,140.227;35.465,140.002;35.614,140.213;35.938,139.973;35.945,140.124;33.639,140.619;36.447,140.762;34.358,136.18;36.914,138.668" 
+data-loaded="true">
+<DIV style="background: rgb(255, 255, 255); padding: 0px 1px 1px; border-radius: 2px; border: 1px solid rgb(169, 187, 223); top: 6px; right: 115px; position: absolute; z-index: 10000;" 
+class="map-toggle"><LABEL><INPUT title="Show Magnitude" CHECKED="checked" type="checkbox"></LABEL></DIV>
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: 0;" 
+class="gm-style">
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 1; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 200;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 101;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 30;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 215px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: -41px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 215px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 215px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 471px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: -41px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -41px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 471px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; position: absolute;" height="256" width="256" 
+unselectable="on"></CANVAS></DIV>
+<DIV style="left: 471px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 201;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 102;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 103;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: -1;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 215px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: -41px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 215px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 215px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 471px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: -41px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -41px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 471px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><CANVAS 
+style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+height="192" width="192" unselectable="on"></CANVAS></DIV>
+<DIV style="left: 471px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: 162px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: -297px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: -94px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV>
+<DIV style="left: 727px; top: 418px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></DIV></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 202;">
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 104;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 105;"></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 106;">
+<DIV style="display: none; z-index: -202; cursor: pointer;">
+<DIV 
+style="width: 30px; height: 27px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 90px; height: 27px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/undo_poly.png" width="1" height="1" 
+unselectable="on"></DIV></DIV></DIV></DIV>
+<DIV 
+style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 100;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 215px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -41px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 215px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 215px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 471px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -41px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -41px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 471px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 471px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -297px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 727px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -297px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: -297px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 727px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV>
+<DIV style="left: 727px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV></DIV></DIV></DIV>
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="width: 750px; height: 470px; overflow: hidden;"><IMG style="width: 750px; height: 470px;" 
+src="http://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&amp;1i14121&amp;2i6238&amp;2e2&amp;3u6&amp;4m2&amp;1u750&amp;2u470&amp;5m4&amp;1e3&amp;5sen-US&amp;6sus&amp;10b1&amp;token=11765" 
+width="750" height="470"></DIV></DIV>
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+<DIV style="left: 0px; top: 0px; position: absolute; z-index: 1;">
+<DIV style="left: 215px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=25&amp;z=6&amp;token=59246" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -41px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=25&amp;z=6&amp;token=120686" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 215px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=24&amp;z=6&amp;token=68164" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 215px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=56&amp;y=26&amp;z=6&amp;token=50328" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=56&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 471px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=25&amp;z=6&amp;token=128877" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -41px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=24&amp;z=6&amp;token=129604" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -41px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=55&amp;y=26&amp;z=6&amp;token=111768" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=55&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 471px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=24&amp;z=6&amp;token=6724" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 471px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm1.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=57&amp;y=26&amp;z=6&amp;token=119959" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt1.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=57&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -297px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=54&amp;y=25&amp;z=6&amp;token=51055" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=54&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 727px; top: 162px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=25&amp;z=6&amp;token=67437" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=25&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -297px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=54&amp;y=24&amp;z=6&amp;token=59973" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=54&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: -297px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=54&amp;y=26&amp;z=6&amp;token=42137" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=54&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 727px; top: -94px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=24&amp;z=6&amp;token=76355" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=24&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV>
+<DIV style="left: 727px; top: 418px; width: 256px; height: 256px; position: absolute; opacity: 1;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://khm0.googleapis.com/kh?v=144&amp;hl=en-US&amp;x=58&amp;y=26&amp;z=6&amp;token=58519" 
+width="1" height="1" unselectable="on"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 256px; height: 256px; position: absolute;" 
+src="http://mt0.googleapis.com/vt?lyrs=m@248000000&amp;src=apiv3&amp;hl=en-US&amp;x=58&amp;y=26&amp;z=6&amp;style=50,37%7Csmartmaps" 
+width="1" height="1" unselectable="on"></DIV></DIV></DIV></DIV></DIV>
+<DIV style="left: 0px; bottom: 0px; margin-right: 5px; margin-left: 5px; position: absolute; z-index: 1000000;"><A 
+style="overflow: visible; float: none; display: inline; position: static;" 
+title="Click to see this area on Google Maps" href="http://maps.google.com/maps?ll=35.304557,138.520281&amp;z=6&amp;t=h&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" 
+target="_blank">
+<DIV style="width: 62px; height: 26px; cursor: pointer;"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 62px; height: 26px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png" width="1" 
+height="1" unselectable="on">
+<DIV style="left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.01; background-color: white;" 
+class="gmnoprint"></DIV></DIV></A></DIV>
+<DIV style="width: 430px; right: 72px; bottom: 0px; position: absolute; z-index: 1000001;" 
+class="gmnoprint">
+<DIV class="gm-style-cc" unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); text-decoration: none; display: none; cursor: pointer;">Map 
+Data</A><SPAN>Map data ©2014 AutoNavi, Google, Kingway, SK planet, ZENRIN  
+Imagery ©2014 TerraMetrics</SPAN></DIV></DIV></DIV>
+<DIV style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); left: 225px; top: 145px; width: 256px; height: 148px; color: rgb(34, 34, 34); font-family: Roboto,Arial,sans-serif; display: none; position: absolute; z-index: 10000002; box-shadow: 0px 4px 16px rgba(0,0,0,0.2); background-color: white;">
+<DIV style="padding: 0px 0px 10px; font-size: 16px;">Map Data</DIV>
+<DIV style="font-size: 13px;">Map data ©2014 AutoNavi, Google, Kingway, SK 
+planet, ZENRIN  Imagery ©2014 TerraMetrics</DIV>
+<DIV style="top: 12px; width: 13px; height: 13px; right: 12px; overflow: hidden; position: absolute; z-index: 10000; cursor: pointer; opacity: 0.7;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -2px; top: -336px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute;" class="gmnoscreen">
+<DIV style="text-align: right; color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 11px; direction: ltr; background-color: rgb(245, 245, 245);">Map 
+data ©2014 AutoNavi, Google, Kingway, SK planet, ZENRIN&nbsp; Imagery ©2014 
+TerraMetrics</DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute; z-index: 1000001;" 
+class="gmnoprint gm-style-cc" unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer;" href="http://www.google.com/intl/en-US_US/help/terms_maps.html" 
+target="_blank">Terms of Use</A></DIV></DIV>
+<DIV style="right: 0px; bottom: 0px; position: absolute;" class="gm-style-cc" 
+unselectable="on">
+<DIV style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+<DIV style="width: 1px;"></DIV>
+<DIV style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></DIV></DIV>
+<DIV style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; display: none; white-space: nowrap; position: relative; direction: ltr;"><A 
+style="color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 10px; text-decoration: none; position: relative;" 
+title="Report errors in the road map or imagery to Google" href="http://maps.google.com/maps?ll=35.304557,138.520281&amp;z=6&amp;t=h&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3&amp;skstate=action:mps_dialog$apiref:1&amp;output=classic" 
+target="_new">Report a map error</A></DIV></DIV>
+<DIV style="margin: 5px; left: 0px; top: 0px; position: absolute;" class="gmnoprint" 
+unselectable="on" controlWidth="78" controlHeight="340">
+<DIV style="left: 0px; top: 0px; width: 78px; height: 78px; position: absolute; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+class="gmnoprint" controlWidth="78" controlHeight="80">
+<DIV style="left: 0px; top: 0px; width: 78px; height: 78px; position: absolute;" 
+class="gmnoprint" controlWidth="78" controlHeight="80">
+<DIV style="visibility: hidden;"><svg xmlns="http://www.w3.org/2000/svg" 
+overflow="hidden" style="left: 0px; top: 0px; position: absolute;" viewBox="0 0 78 78" 
+width="78px" height="78px" version="1.1"><circle fill="#f2f4f6" fill-opacity="0.2" 
+stroke="#f2f4f6" stroke-width="3" cx="39" cy="39" r="35" /><g transform="rotate(0)"><rect 
+fill="#f2f4f6" stroke="#a6a6a6" stroke-width="1" x="33" y="0" width="12" 
+height="11" rx="4" ry="4" /><polyline fill="#f2f4f6" stroke="#000" 
+stroke-linejoin="bevel" stroke-width="1.5" points="36.5,8.5 36.5,2.5 41.5,8.5 41.5,2.5" 
+/></g></svg></DIV></DIV>
+<DIV style="left: 10px; top: 11px; position: absolute;" class="gmnoprint" 
+controlWidth="59" controlHeight="59">
+<DIV 
+style="width: 59px; height: 59px; overflow: hidden; position: relative;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on">
+<DIV style="left: 0px; top: 20px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan left"></DIV>
+<DIV style="left: 39px; top: 20px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan right"></DIV>
+<DIV style="left: 20px; top: 0px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan up"></DIV>
+<DIV style="left: 20px; top: 39px; width: 19.66px; height: 19.66px; position: absolute; cursor: pointer; opacity: 0.01; background-color: white;" 
+title="Pan down"></DIV></DIV></DIV></DIV>
+<DIV style="left: 23px; top: 85px; position: absolute; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+controlWidth="32" controlHeight="40">
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -9px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -107px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -58px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 0px; top: 0px; width: 32px; height: 40px; overflow: hidden; visibility: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -205px; top: -102px; width: 1028px; height: 214px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="display: none; position: absolute; opacity: 0.6;" class="gmnoprint" 
+controlWidth="0" controlHeight="0">
+<DIV style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;" 
+title="Rotate map 90 degrees"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -38px; top: -360px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV>
+<DIV style="left: 27px; top: 130px; position: absolute;" class="gmnoprint" 
+controlWidth="25" controlHeight="210">
+<DIV style="width: 23px; height: 24px; overflow: hidden; position: relative; z-index: 1; cursor: pointer;" 
+title="Zoom in"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -400px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="top: -4px; width: 25px; height: 162px; overflow: hidden; position: relative; cursor: pointer;" 
+title="Click to zoom"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -87px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="left: 2px; top: 124px; width: 21px; height: 14px; overflow: hidden; position: absolute; z-index: 2; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;" 
+title="Drag to zoom"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: -384px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV>
+<DIV style="top: -4px; width: 23px; height: 23px; overflow: hidden; position: relative; z-index: 3; cursor: pointer;" 
+title="Zoom out"><IMG style="margin: 0px; padding: 0px; border: 0px currentColor; left: -17px; top: -361px; width: 59px; height: 492px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" width="1" 
+height="1" unselectable="on"></DIV></DIV></DIV>
+<DIV style="margin: 5px; top: 0px; right: 0px; position: absolute; z-index: 0; cursor: pointer;" 
+class="gmnoprint">
+<DIV style="float: left;" class="gm-style-mtc">
+<DIV style="padding: 1px 6px; border: 1px solid rgba(0, 0, 0, 0.15); text-align: center; color: rgb(86, 86, 86); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; position: relative; direction: ltr; min-width: 24px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: rgb(255, 255, 255);" 
+title="Show street map" unselectable="on">Map</DIV>
+<DIV style="border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15); left: 0px; top: 20px; text-align: left; padding-top: 2px; display: none; position: absolute; z-index: -1; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: white;">
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Show street map with terrain" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">Terrain</LABEL></DIV></DIV></DIV>
+<DIV style="float: left;" class="gm-style-mtc">
+<DIV style="border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) currentColor; padding: 1px 6px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; font-weight: 500; position: relative; direction: ltr; min-width: 42px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: rgb(255, 255, 255);" 
+title="Show satellite imagery" unselectable="on">Satellite</DIV>
+<DIV style="border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15); top: 20px; text-align: left; right: 0px; padding-top: 2px; display: none; position: absolute; z-index: -1; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-clip: padding-box; background-color: white;">
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(184, 184, 184); font-family: Roboto,Arial,sans-serif; font-size: 11px; display: none; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Zoom in to show 45 degree view" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(241, 241, 241); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox" disabled="">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">45°</LABEL></DIV>
+<DIV style="padding: 3px 8px 3px 5px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; background-color: rgb(255, 255, 255);" 
+title="Show imagery with street names" unselectable="on"><SPAN style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);" 
+role="checkbox">
+<DIV style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; position: absolute;"><IMG 
+style="margin: 0px; padding: 0px; border: 0px currentColor; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute;" 
+src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" width="1" height="1" 
+unselectable="on"></DIV></SPAN><LABEL style="vertical-align: middle; cursor: pointer;">Labels</LABEL></DIV></DIV></DIV></DIV></DIV></DIV>
+<BR class="clear"></DIV>
+<DIV class="quakes-info col-lg-4 col-md-6">
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="0">
+<DIV style="cursor: pointer;" class="marker marker-brown"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-18-19-10-45-utc-5-7-332"><ABBR class="timeago" title="2013-11-18 19:10:45 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.7 
+magnitude</SPAN>, 332 km depth</STRONG><BR><A 
+href="/jp-23-toba/recent">Toba</A>,        <A 
+href="/p/japan/mie/recent">Mie</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="0">
+<H4 class="title text-warning">5.7 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-18 19:10:45 UTC">2 months ago</ABBR>    
+at 19:10 <BR>November 18, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 34.34, 137.073      <BR>      
+93.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (57.2 miles)  </P>
+<P><A href="/r/near-s-coast-of-honshu-japan/recent">Near S. Coast Of Honshu, 
+Japan</A></P>
+<P>Depth: 332 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="1">
+<DIV style="cursor: pointer;" class="marker marker-paleblue"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-16-17-00-03-utc-4-7-71"><ABBR class="timeago" title="2013-11-16 17:00:03 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.7 
+magnitude</SPAN>, 71 km depth</STRONG><BR><A 
+href="/jp-04-chiba/recent">Chiba</A>,        <A 
+href="/p/japan/chiba/recent">Chiba</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="1">
+<H4 class="title text-warning">4.7 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-16 17:00:03 UTC">2 months ago</ABBR>    
+at 17:00 <BR>November 16, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.543, 140.227      <BR>      
+303.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (188.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 71 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="2">
+<DIV style="cursor: pointer;" class="marker marker-pink"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-16-15-45-58-utc-4-5-63"><ABBR class="timeago" title="2013-11-16 15:45:58 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.5 
+magnitude</SPAN>, 63 km depth</STRONG><BR><A 
+href="/jp-04-ichihara/recent">Ichihara</A>,        <A href="/p/japan/chiba/recent">Chiba</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="2">
+<H4 class="title text-warning">4.5 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-16 15:45:58 UTC">2 months ago</ABBR>    
+at 15:45 <BR>November 16, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.465, 140.002      <BR>      
+282.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (175.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 63 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="3">
+<DIV style="cursor: pointer;" class="marker marker-purple"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-16-11-44-41-utc-5-5-63"><ABBR class="timeago" title="2013-11-16 11:44:41 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.5 
+magnitude</SPAN>, 63 km depth</STRONG><BR><A 
+href="/jp-04-yotsukaido/recent">Yotsukaido</A>,        <A href="/p/japan/chiba/recent">Chiba</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="3">
+<H4 class="title text-warning">5.5 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-16 11:44:41 UTC">2 months ago</ABBR>    
+at 11:44 <BR>November 16, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.614, 140.213      <BR>      
+303.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (188.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 63 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="4">
+<DIV style="cursor: pointer;" class="marker marker-blue"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-09-22-37-50-utc-5-6-65"><ABBR class="timeago" title="2013-11-09 22:37:50 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.6 
+magnitude</SPAN>, 65 km depth</STRONG><BR><A 
+href="/jp-14-moriya/recent">Moriya</A>,        <A 
+href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="4">
+<H4 class="title text-warning">5.6 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-09 22:37:50 UTC">2 months ago</ABBR>    
+at 22:37 <BR>November 09, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.938, 139.973      <BR>      
+290.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (180.2 miles)  </P>
+<P><A href="/r/near-s-coast-of-honshu-japan/recent">Near S. Coast Of Honshu, 
+Japan</A></P>
+<P>Depth: 65 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="5">
+<DIV style="cursor: pointer;" class="marker marker-darkgreen"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-11-03-05-25-14-utc-5-0-65"><ABBR class="timeago" title="2013-11-03 05:25:14 UTC">2 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">5.0 
+magnitude</SPAN>, 65 km depth</STRONG><BR><A 
+href="/jp-14-ushiku/recent">Ushiku</A>,        <A 
+href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="5">
+<H4 class="title text-warning">5.0 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-11-03 05:25:14 UTC">2 months ago</ABBR>    
+at 05:25 <BR>November 03, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 35.945, 140.124      <BR>      
+303.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (188.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 65 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="6">
+<DIV style="cursor: pointer;" class="marker marker-green"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-10-19-04-18-31-utc-4-4-50"><ABBR class="timeago" title="2013-10-19 04:18:31 UTC">3 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.4 
+magnitude</SPAN>, 50 km depth</STRONG><BR><A 
+href="/r/izu-islands-japan/recent">Izu Islands, Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="6">
+<H4 class="title text-warning">4.4 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-10-19 04:18:31 UTC">3 months ago</ABBR>    
+at 04:18 <BR>October 19, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 33.639, 140.619      <BR>      
+380.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (236.2 miles)  </P>
+<P><A href="/r/izu-islands-japan/recent">Izu Islands, Japan</A></P>
+<P>Depth: 50 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="7">
+<DIV style="cursor: pointer;" class="marker marker-yellow"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-10-11-17-43-12-utc-4-7-51"><ABBR class="timeago" title="2013-10-11 17:43:12 UTC">3 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.7 
+magnitude</SPAN>, 51 km depth</STRONG><BR><A href="/jp-14-kuji/recent">Kuji</A>, 
+       <A href="/p/japan/ibaraki/recent">Ibaraki</A>,      <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="7">
+<H4 class="title text-warning">4.7 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-10-11 17:43:12 UTC">3 months ago</ABBR>    
+at 17:43 <BR>October 11, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 36.447, 140.762      <BR>      
+375.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (233.2 miles)  </P>
+<P><A href="/r/eastern-honshu-japan/recent">Eastern Honshu, Japan</A></P>
+<P>Depth: 51 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row odd">
+<DIV class=" pull-left label" data-quakeIndex="8">
+<DIV style="cursor: pointer;" class="marker marker-orange"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-10-07-14-21-00-utc-4-2-387"><ABBR class="timeago" title="2013-10-07 14:21:00 UTC">3 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.2 
+magnitude</SPAN>, 387 km depth</STRONG><BR><A 
+href="/jp-28-haibara/recent">Haibara</A>,        <A 
+href="/p/japan/nara/recent">Nara</A>,      <A 
+href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="8">
+<H4 class="title text-warning">4.2 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-10-07 14:21:00 UTC">3 months ago</ABBR>    
+at 14:21 <BR>October 07, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 34.358, 136.18      <BR>      
+112.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (69.2 miles)  </P>
+<P><A href="/r/near-s-coast-of-western-honshu/recent">Near S. Coast Of Western 
+Honshu</A></P>
+<P>Depth: 387 km</P></DIV></DIV></DIV>
+<DIV class="quake-info row even">
+<DIV class=" pull-left label" data-quakeIndex="9">
+<DIV style="cursor: pointer;" class="marker marker-red"></DIV></DIV>
+<DIV>
+<DIV class="quiet"><STRONG><A 
+href="/quakes/2013-10-01-16-08-25-utc-4-5-110"><ABBR class="timeago" title="2013-10-01 16:08:25 UTC">3 
+months ago</ABBR></A></STRONG><STRONG><SPAN class="text-warning">4.5 
+magnitude</SPAN>, 110 km depth</STRONG><BR><A 
+href="/jp-29-shiozawa/recent">Shiozawa</A>,        <A href="/p/japan/niigata/recent">Niigata</A>, 
+     <A href="/p/japan/recent">Japan</A></DIV>
+<DIV class="quake-info-window" data-quakeIndex="9">
+<H4 class="title text-warning">4.5 magnitude earthquake</H4>
+<P><ABBR class="timeago" title="2013-10-01 16:08:25 UTC">3 months ago</ABBR>    
+at 16:08 <BR>October 01, 2013 UTC  </P>
+<P><STRONG>Location:</STRONG><BR>    Epicenter at 36.914, 138.668      <BR>      
+250.2 km from  <A href="/jp-01-nagoya/recent">Nagoya</A>    (155.2 miles)  </P>
+<P><A href="/r/near-west-coast-of-honshu-japan/recent">Near West Coast Of 
+Honshu, Japan</A></P>
+<P>Depth: 110 km</P></DIV></DIV></DIV></DIV><BR class="clear"></DIV>
+<DIV class="text-center">
+<DIV class="pagination"><A href="/jp-01-nagoya/recent">← Previous</A><A href="/jp-01-nagoya/recent?before=2013-10-01+16%3A08%3A25+UTC">Next 
+→</A></DIV></DIV>
+<STYLE>
+.responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive { width: 728px; height: 90px; } }
+@media(min-width: 1000px) { .responsive { width: 970px; height: 90px; } }
+</STYLE>
+
+<SCRIPT src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+<!-- responsive -->
+<P class="text-center"><INS style="width: 970px; height: 90px; display: inline-block;" 
+class="adsbygoogle responsive" data-ad-slot="8606642025" data-ad-client="ca-pub-6219004123561661" 
+data-adsbygoogle-status="done"><INS style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: inline-table; visibility: visible; position: relative; background-color: transparent;"><INS 
+style="margin: 0px; padding: 0px; border: currentColor; width: 970px; height: 90px; display: block; visibility: visible; position: relative; background-color: transparent;" 
+id="aswift_2_anchor"><IFRAME style="left: 0px; top: 0px; position: absolute;" 
+id="aswift_2" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" 
+vspace="0" height="90" marginHeight="0" frameBorder="0" width="970" 
+allowTransparency="true" name="aswift_2" marginWidth="0" scrolling="no" hspace="0"></IFRAME></INS></INS></INS>
+</P>
+<SCRIPT>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</SCRIPT>
+<BR class="clear"></DIV></DIV>
+<DIV id="footer" class="well">
+<DIV class="feature"><A href="/about">About Earthquake Track</A></DIV>|
+<DIV class="usgs-credit">All Earthquake Data Courtesy<A href="http://earthquake.usgs.gov/">USGS</A>
+</DIV>|
+<DIV class="copyright">©2014 Earthquake Track</DIV>|
+<DIV class="i18n"><A 
+href="http://es.earthquaketrack.com/jp-01-nagoya/recent">Español</A></DIV></DIV>
+</DIV>
+<SCRIPT type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23817075-1']);
+  _gaq.push(['_setCustomVar', 1, 'Locale', 'en', 3 ]);
+  _gaq.push(['_setCustomVar', 2, 'Segment', 'banner', 3 ]);
+  _gaq.push(['_setCustomVar', 3, 'Transaction', 'cr', 3 ]);
+  _gaq.push(['_setCustomVar', 4, 'LT', 'cr', 2 ]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</SCRIPT>
+
+<DIV id="banner"></DIV>
+<DIV id="foot-banner"></DIV>
+<SCRIPT type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMaps"></SCRIPT>
+<IFRAME style="top: -100px; width: 1px; height: 1px; position: absolute;" id="oauth2relay189196248" 
+src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fearthquaketrack.com#rpctoken=2054742212&amp;forcesecure=1" 
+name="oauth2relay189196248"></IFRAME>
+<SCRIPT src="http://maps.gstatic.com/intl/en_us/mapfiles/api-3/15/5/main.js"></SCRIPT>
+
+<SCRIPT src="http://js-agent.newrelic.com/nr-248.min.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="http://beacon-6.newrelic.com/1/a42cfc00f1?a=228451&amp;qt=3&amp;ap=738&amp;be=1154&amp;fe=3464&amp;dc=3428&amp;to=IQ1cEBMODwkDERtXWxYLVxdOEwYGAw1A&amp;v=248.faf68e4&amp;jsonp=NREUM.setToken&amp;perf=%7B%22timing%22:%7B%22of%22:1388916297306,%22n%22:0,%22dl%22:1146,%22di%22:1146,%22ds%22:2303,%22de%22:2523,%22dc%22:4582,%22l%22:4618,%22f%22:1,%22dn%22:3,%22dne%22:210,%22c%22:210,%22ce%22:279,%22rq%22:279,%22rp%22:1109,%22rpe%22:1722%7D,%22navigation%22:%7B%7D%7D"></SCRIPT>
+</BODY></HTML>
