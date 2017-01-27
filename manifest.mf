@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: Moumita Chatterjee
+Trusted-Library: true
+Main-Class: code.earthquakeCities
+Class-Path: lib/esri_mo20.jar lib/esri_mo20res.jar 
+X-COMMENT: Main-Class is in code directory
